@@ -9,15 +9,16 @@ namespace ByteBasket
 {
     public interface IDelivery
     {
-        void Delivery();
+        void Delivery_method();
     }
     public abstract class Delivery()
     {
         public Order Order { get; set; }
+        public Kund Customer { get; set; }
 
-        public void Delivery()
+        public void Delivery_Method()
         {
-            Console.WriteLine($"the  Order {Order.Id} for {Kund.Name} at {Kund.Adress} is in transit");
+            Console.WriteLine($"the  Order {Order.Id} for {Customer.Name} at {Customer.Adress} is in transit");
         }
     }
     public class Standard : Delivery, IDelivery 

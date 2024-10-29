@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Kund kund = new Kund("max", "poerthansvägen 12", 205110001, 0707254431, "Maxlundberg@protonmail.com");
         }
     }
 }
